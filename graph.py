@@ -20,7 +20,7 @@ def build_graph():
 
     graph.set_entry_point("segregator")
 
-    # ✅ SEQUENTIAL FLOW (NO PARALLEL WRITES)
+ 
     graph.add_edge("segregator", "id_agent")
     graph.add_edge("id_agent", "discharge_agent")
     graph.add_edge("discharge_agent", "bill_agent")
